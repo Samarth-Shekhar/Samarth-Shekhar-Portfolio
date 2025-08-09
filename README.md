@@ -30,23 +30,13 @@ Vite / Webpack (if used)
 To run this portfolio locally:
 
 Clone the repo:
-
-bash
-Copy
-Edit
 git clone https://github.com/Samarth-Shekhar/Samarth-Shekhar-Portfolio.git
 cd Samarth-Shekhar-Portfolio
+
 Install dependencies:
-
-bash
-Copy
-Edit
 npm install
-Start the development server:
 
-bash
-Copy
-Edit
+Start the development server:
 npm run dev
 Open your browser and visit http://localhost:3000 (or the port shown in the terminal)
 
@@ -56,8 +46,8 @@ This project can be deployed easily using platforms like GitHub Pages, Netlify, 
 # Contact
 Feel free to reach out to me:
 
-Email: samarth@example.com
+Email: samarthshekharmj@gmail.com
 
-LinkedIn: linkedin.com/in/samarth-shekhar
+LinkedIn: www.linkedin.com/in/samarth-shekhar-185ba311a
 
 GitHub: github.com/Samarth-Shekhar
