@@ -29,14 +29,14 @@ Vite / Webpack (if used)
 # Getting Started
 To run this portfolio locally:
 
- # 1.Clone the repo:
+1. Clone the repo:
 git clone https://github.com/Samarth-Shekhar/Samarth-Shekhar-Portfolio.git
 cd Samarth-Shekhar-Portfolio
 
-# 2.Install dependencies:
+2. Install dependencies:
 npm install
 
-# 3.Start the development server:
+3. Start the development server:
 npm run dev
 Open your browser and visit http://localhost:3000 (or the port shown in the terminal)
 
