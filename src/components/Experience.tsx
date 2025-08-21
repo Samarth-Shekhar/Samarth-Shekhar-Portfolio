@@ -10,7 +10,11 @@ const Experience = () => {
       location: "Remote",
       period: "10 June 2024 - 17 July 2024",
       description: "Improved page responsiveness by 20% and reduced page load time by 15% using commercial UI/UX designs. Collaborated with the development team to implement responsive web solutions.",
+<<<<<<< HEAD
       technologies: ["JavaScript", "HTML","CSS","UI/UX"]
+=======
+      technologies: ["React", "JavaScript", "UI/UX"]
+>>>>>>> 5427cc90805b635435384357df2f301527c03e03
     },
     {
       title: "AI & Automation Intern", 
@@ -27,6 +31,7 @@ const Experience = () => {
       period: "7 May 2024 - 31 May 2024",
       description: "Built and implemented an innovative airport announcement system that reduced noise complaints time by 30% and streamlined tracking for 5+ airport announcements.",
       technologies: ["System Design", "Python", "Database Management"]
+<<<<<<< HEAD
     },
     {
   "title": "React.js Intern",
@@ -36,6 +41,10 @@ const Experience = () => {
   "description": "Built and integrated 10+ reusable React components, improving UI/UX consistency by 25% across 3 enterprise apps and reducing code duplication by 40%.",
   "technologies": ["React.js", "JavaScript", "HTML", "CSS", "UI/UX"]
 }
+=======
+    }
+    
+>>>>>>> 5427cc90805b635435384357df2f301527c03e03
   ];
 
   return (
