@@ -9,25 +9,16 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-<<<<<<< HEAD
 
-  
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
 
-    
     "skipLibCheck": true,
     "allowJs": true,
     "noImplicitAny": false,
     "noUnusedParameters": false,
-=======
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
-    "skipLibCheck": true,
-    "allowJs": true,
->>>>>>> 5427cc90805b635435384357df2f301527c03e03
     "noUnusedLocals": false,
     "strictNullChecks": false
   }

@@ -64,15 +64,13 @@ const Navigation = () => {
               Projects
             </button>
             <button
-<<<<<<< HEAD
+
               onClick={() => scrollToSection("certifications")}
               className="text-muted-foreground hover:text-accent transition-colors"
             >
               Certifications
             </button>
             <button
-=======
->>>>>>> 5427cc90805b635435384357df2f301527c03e03
               onClick={() => scrollToSection("contact")}
               className="text-muted-foreground hover:text-accent transition-colors"
             >
@@ -80,11 +78,11 @@ const Navigation = () => {
             </button>
           </div>
 
-<<<<<<< HEAD
+
           {/* Resume button */}
-=======
+
           {/* Resume button only */}
->>>>>>> 5427cc90805b635435384357df2f301527c03e03
+
           <div className="flex items-center">
             <Button
               variant="outline"

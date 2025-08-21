@@ -9,42 +9,37 @@ const Experience = () => {
       company: "Essentia",
       location: "Remote",
       period: "10 June 2024 - 17 July 2024",
-      description: "Improved page responsiveness by 20% and reduced page load time by 15% using commercial UI/UX designs. Collaborated with the development team to implement responsive web solutions.",
-<<<<<<< HEAD
-      technologies: ["JavaScript", "HTML","CSS","UI/UX"]
-=======
-      technologies: ["React", "JavaScript", "UI/UX"]
->>>>>>> 5427cc90805b635435384357df2f301527c03e03
+      description:
+        "Improved page responsiveness by 20% and reduced page load time by 15% using commercial UI/UX designs. Collaborated with the development team to implement responsive web solutions.",
+      technologies: ["React", "JavaScript", "HTML", "CSS", "UI/UX"],
     },
     {
-      title: "AI & Automation Intern", 
+      title: "AI & Automation Intern",
       company: "Marksman Technologies Pvt. Ltd.",
       location: "Remote",
       period: "20 May 2024 - 30 June 2024",
-      description: "Built and optimized RAG pipeline using Grok LLM and automating recipe and grocery generation with 95% accuracy using Grok LLM and Selenium WebDriver.",
-      technologies: ["Python", "AI/ML", "Selenium", "LLM"]
+      description:
+        "Built and optimized RAG pipeline using Grok LLM and automated recipe and grocery generation with 95% accuracy using Grok LLM and Selenium WebDriver.",
+      technologies: ["Python", "AI/ML", "Selenium", "LLM"],
     },
     {
       title: "IT Intern",
       company: "Airports Authority of India",
       location: "Delhi",
       period: "7 May 2024 - 31 May 2024",
-      description: "Built and implemented an innovative airport announcement system that reduced noise complaints time by 30% and streamlined tracking for 5+ airport announcements.",
-      technologies: ["System Design", "Python", "Database Management"]
-<<<<<<< HEAD
+      description:
+        "Built and implemented an innovative airport announcement system that reduced noise complaint resolution time by 30% and streamlined tracking for 5+ airport announcements.",
+      technologies: ["System Design", "Python", "Database Management"],
     },
     {
-  "title": "React.js Intern",
-  "company": "Celebal Technologies",
-  "location": "Remote",
-  "period": "19 May 2025 - 20 July 2025",
-  "description": "Built and integrated 10+ reusable React components, improving UI/UX consistency by 25% across 3 enterprise apps and reducing code duplication by 40%.",
-  "technologies": ["React.js", "JavaScript", "HTML", "CSS", "UI/UX"]
-}
-=======
-    }
-    
->>>>>>> 5427cc90805b635435384357df2f301527c03e03
+      title: "React.js Intern",
+      company: "Celebal Technologies",
+      location: "Remote",
+      period: "19 May 2025 - 20 July 2025",
+      description:
+        "Built and integrated 10+ reusable React components, improving UI/UX consistency by 25% across 3 enterprise apps and reducing code duplication by 40%.",
+      technologies: ["React.js", "JavaScript", "HTML", "CSS", "UI/UX"],
+    },
   ];
 
   return (
@@ -59,14 +54,19 @@ const Experience = () => {
 
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card key={index} className="bg-card border-border hover:border-accent/50 transition-all duration-300 group">
+            <Card
+              key={index}
+              className="bg-card border-border hover:border-accent/50 transition-all duration-300 group"
+            >
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>
                     <CardTitle className="text-xl text-accent group-hover:text-accent/80 transition-colors">
                       {exp.title}
                     </CardTitle>
-                    <p className="text-lg font-semibold text-foreground">{exp.company}</p>
+                    <p className="text-lg font-semibold text-foreground">
+                      {exp.company}
+                    </p>
                   </div>
                   <div className="flex flex-col md:items-end gap-2">
                     <div className="flex items-center text-muted-foreground text-sm">
@@ -86,8 +86,8 @@ const Experience = () => {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, techIndex) => (
-                    <Badge 
-                      key={techIndex} 
+                    <Badge
+                      key={techIndex}
                       variant="secondary"
                       className="bg-accent/10 text-accent border-accent/20 hover:bg-accent/20 transition-colors"
                     >
