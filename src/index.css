@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark portfolio theme */
+    --background: 210 30% 8%;
+    --foreground: 180 100% 90%;
+
+    --card: 210 25% 12%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 210 25% 12%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 185 100% 45%;
+    --primary-foreground: 210 30% 8%;
+
+    --secondary: 210 20% 15%;
+    --secondary-foreground: 180 100% 90%;
+
+    --muted: 210 20% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 185 100% 45%;
+    --accent-foreground: 210 30% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 15%;
+    --ring: 185 100% 45%;
+
+    --radius: 0.5rem;
+    
+    /* Custom portfolio tokens */
+    --hero-glow: 185 100% 45%;
+    --code-bg: 210 25% 10%;
+    --syntax-green: 120 100% 75%;
+    --syntax-yellow: 50 100% 75%;
+    --syntax-blue: 200 100% 75%;
+    --syntax-purple: 280 100% 75%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(185 100% 45%), hsl(200 100% 55%));
+    --gradient-glow: radial-gradient(circle at center, hsl(185 100% 45% / 0.3), transparent 70%);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Keep same dark theme for consistency */
+    --background: 210 30% 8%;
+    --foreground: 180 100% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--accent));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent) / 0.8);
+  }
+}
+
+@layer components {
+  .code-editor {
+    background: hsl(var(--code-bg));
+    border: 1px solid hsl(var(--border));
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -15px hsl(var(--accent) / 0.3);
+  }
+  
+  .code-header {
+    background: hsl(var(--secondary));
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid hsl(var(--border));
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .code-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .code-dot.red { background: #ff5f56; }
+  .code-dot.yellow { background: #ffbd2e; }
+  .code-dot.green { background: #27ca3f; }
+  
+  .syntax-keyword { color: hsl(var(--syntax-purple)); }
+  .syntax-string { color: hsl(var(--syntax-green)); }
+  .syntax-number { color: hsl(var(--syntax-yellow)); }
+  .syntax-property { color: hsl(var(--syntax-blue)); }
+  
+  .glow-text {
+    text-shadow: 0 0 10px hsl(var(--accent) / 0.5);
+  }
+  
+  .hero-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
